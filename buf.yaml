@@ -1,0 +1,10 @@
+version: v1
+name: buf.build/apex20/contracts
+lint:
+  use:
+    - STANDARD
+  except:
+    - PACKAGE_DIRECTORY_MATCH
+breaking:
+  use:
+    - FILE

@@ -1,0 +1,16 @@
+{
+  "name": "apex20-contracts",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "generate": "buf generate",
+    "lint": "buf lint",
+    "format": "buf format -w proto",
+    "clean": "rm -rf gen/*"
+  },
+  "devDependencies": {
+    "@bufbuild/buf": "latest",
+    "@bufbuild/protoc-gen-es": "latest",
+    "@connectrpc/protoc-gen-connect-es": "latest"
+  }
+}

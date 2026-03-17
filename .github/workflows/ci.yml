@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+    branches: [master, dev, "feat/**", "fix/**", "chore/**"]
+  pull_request:
+    branches: [master, dev]
+
+jobs:
+  lint:
+    name: Buf Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: bufbuild/buf-setup-action@v1
+      - run: buf lint
