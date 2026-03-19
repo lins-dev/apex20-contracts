@@ -436,7 +436,7 @@ const file_proto_apex20_v1_chat_proto_rawDesc = "" +
 	"\x13MESSAGE_TYPE_SYSTEM\x10\x03\x12\x13\n" +
 	"\x0fMESSAGE_TYPE_GM\x10\x042[\n" +
 	"\vChatService\x12L\n" +
-	"\vSendMessage\x12\x1d.apex20.v1.SendMessageRequest\x1a\x1e.apex20.v1.SendMessageResponseBIZGgithub.com/apex20/monorepo/packages/contracts/gen/go/apex20/v1;apex20v1b\x06proto3"
+	"\vSendMessage\x12\x1d.apex20.v1.SendMessageRequest\x1a\x1e.apex20.v1.SendMessageResponseB6Z4github.com/apex20/contracts/proto/apex20/v1;apex20v1b\x06proto3"
 
 var (
 	file_proto_apex20_v1_chat_proto_rawDescOnce sync.Once

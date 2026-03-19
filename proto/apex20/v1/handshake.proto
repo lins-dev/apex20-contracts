@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package apex20.v1;
 
-option go_package = "github.com/apex20/monorepo/packages/contracts/gen/go/apex20/v1;apex20v1";
+option go_package = "github.com/apex20/contracts/proto/apex20/v1;apex20v1";
 
 // HandshakeRequest é a primeira mensagem enviada pelo cliente ao conectar.
 message HandshakeRequest {

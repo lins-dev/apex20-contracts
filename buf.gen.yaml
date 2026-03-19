@@ -9,6 +9,7 @@ plugins:
     opt: paths=source_relative
 
   # TypeScript/JavaScript generation (ConnectRPC)
+  # Requires: npm install in this directory before running buf generate
   - plugin: es
     out: gen/ts
     opt: target=ts

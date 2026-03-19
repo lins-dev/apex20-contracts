@@ -8,7 +8,7 @@ import (
 	connect "connectrpc.com/connect"
 	context "context"
 	errors "errors"
-	v1 "github.com/apex20/monorepo/packages/contracts/gen/go/apex20/v1"
+	v1 "github.com/apex20/contracts/proto/apex20/v1"
 	http "net/http"
 	strings "strings"
 )
