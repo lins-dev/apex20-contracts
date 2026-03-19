@@ -110,7 +110,7 @@ const file_proto_apex20_v1_health_proto_rawDesc = "" +
 	"\x13HealthCheckResponse\x12\x16\n" +
 	"\x06status\x18\x01 \x01(\tR\x06status2]\n" +
 	"\rHealthService\x12L\n" +
-	"\vHealthCheck\x12\x1d.apex20.v1.HealthCheckRequest\x1a\x1e.apex20.v1.HealthCheckResponseBIZGgithub.com/apex20/monorepo/packages/contracts/gen/go/apex20/v1;apex20v1b\x06proto3"
+	"\vHealthCheck\x12\x1d.apex20.v1.HealthCheckRequest\x1a\x1e.apex20.v1.HealthCheckResponseB6Z4github.com/apex20/contracts/proto/apex20/v1;apex20v1b\x06proto3"
 
 var (
 	file_proto_apex20_v1_health_proto_rawDescOnce sync.Once

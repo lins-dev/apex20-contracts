@@ -445,7 +445,7 @@ const file_proto_apex20_v1_grid_events_proto_rawDesc = "" +
 	"\x18StreamGridEventsResponse\x12*\n" +
 	"\x05event\x18\x01 \x01(\v2\x14.apex20.v1.GridEventR\x05event2n\n" +
 	"\vGridService\x12_\n" +
-	"\x10StreamGridEvents\x12\".apex20.v1.StreamGridEventsRequest\x1a#.apex20.v1.StreamGridEventsResponse(\x010\x01BIZGgithub.com/apex20/monorepo/packages/contracts/gen/go/apex20/v1;apex20v1b\x06proto3"
+	"\x10StreamGridEvents\x12\".apex20.v1.StreamGridEventsRequest\x1a#.apex20.v1.StreamGridEventsResponse(\x010\x01B6Z4github.com/apex20/contracts/proto/apex20/v1;apex20v1b\x06proto3"
 
 var (
 	file_proto_apex20_v1_grid_events_proto_rawDescOnce sync.Once
