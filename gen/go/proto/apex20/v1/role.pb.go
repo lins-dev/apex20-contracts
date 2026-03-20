@@ -21,8 +21,9 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-// Role define o nível de acesso de um usuário na plataforma.
-// É a fonte única de verdade para roles em todos os serviços.
+// Role define o papel de um usuário dentro de uma campanha específica.
+// É a fonte única de verdade para roles de campanha em todos os serviços.
+// Acesso administrativo de plataforma é controlado via is_admin em users (ADR-002).
 type Role int32
 
 const (
@@ -30,7 +31,6 @@ const (
 	Role_ROLE_GM          Role = 1
 	Role_ROLE_PLAYER      Role = 2
 	Role_ROLE_TRUSTED     Role = 3
-	Role_ROLE_ADMIN       Role = 4
 )
 
 // Enum value maps for Role.
@@ -40,14 +40,12 @@ var (
 		1: "ROLE_GM",
 		2: "ROLE_PLAYER",
 		3: "ROLE_TRUSTED",
-		4: "ROLE_ADMIN",
 	}
 	Role_value = map[string]int32{
 		"ROLE_UNSPECIFIED": 0,
 		"ROLE_GM":          1,
 		"ROLE_PLAYER":      2,
 		"ROLE_TRUSTED":     3,
-		"ROLE_ADMIN":       4,
 	}
 )
 
@@ -82,14 +80,12 @@ var File_proto_apex20_v1_role_proto protoreflect.FileDescriptor
 
 const file_proto_apex20_v1_role_proto_rawDesc = "" +
 	"\n" +
-	"\x1aproto/apex20/v1/role.proto\x12\tapex20.v1*\\\n" +
+	"\x1aproto/apex20/v1/role.proto\x12\tapex20.v1*L\n" +
 	"\x04Role\x12\x14\n" +
 	"\x10ROLE_UNSPECIFIED\x10\x00\x12\v\n" +
 	"\aROLE_GM\x10\x01\x12\x0f\n" +
 	"\vROLE_PLAYER\x10\x02\x12\x10\n" +
-	"\fROLE_TRUSTED\x10\x03\x12\x0e\n" +
-	"\n" +
-	"ROLE_ADMIN\x10\x04B6Z4github.com/apex20/contracts/proto/apex20/v1;apex20v1b\x06proto3"
+	"\fROLE_TRUSTED\x10\x03B6Z4github.com/apex20/contracts/proto/apex20/v1;apex20v1b\x06proto3"
 
 var (
 	file_proto_apex20_v1_role_proto_rawDescOnce sync.Once
