@@ -165,7 +165,7 @@ const file_proto_apex20_v1_handshake_proto_rawDesc = "" +
 	"\n" +
 	"error_code\x18\x04 \x01(\tR\terrorCode2X\n" +
 	"\x0eSessionService\x12F\n" +
-	"\tHandshake\x12\x1b.apex20.v1.HandshakeRequest\x1a\x1c.apex20.v1.HandshakeResponseBIZGgithub.com/apex20/monorepo/packages/contracts/gen/go/apex20/v1;apex20v1b\x06proto3"
+	"\tHandshake\x12\x1b.apex20.v1.HandshakeRequest\x1a\x1c.apex20.v1.HandshakeResponseB6Z4github.com/apex20/contracts/proto/apex20/v1;apex20v1b\x06proto3"
 
 var (
 	file_proto_apex20_v1_handshake_proto_rawDescOnce sync.Once

@@ -4,7 +4,7 @@ package apex20.v1;
 
 import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/apex20/monorepo/packages/contracts/gen/go/apex20/v1;apex20v1";
+option go_package = "github.com/apex20/contracts/proto/apex20/v1;apex20v1";
 
 // MessageType define a natureza da mensagem no chat.
 enum MessageType {
