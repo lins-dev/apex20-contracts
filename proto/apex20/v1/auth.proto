@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package apex20.v1;
+
+option go_package = "github.com/apex20/contracts/proto/apex20/v1;apex20v1";
+
+// SignUpRequest contém os dados necessários para criar uma nova conta.
+message SignUpRequest {
+  string email = 1;
+  string password = 2;
+  string name = 3;
+}
+
+// SignUpResponse retorna o usuário criado e o token de acesso.
+message SignUpResponse {
+  string user_id = 1;
+  string access_token = 2;
+}
+
+// SignInRequest contém as credenciais para autenticação.
+message SignInRequest {
+  string email = 1;
+  string password = 2;
+}
+
+// SignInResponse retorna o token de acesso em caso de sucesso.
+message SignInResponse {
+  string user_id = 1;
+  string access_token = 2;
+}
+
+// AuthService gerencia autenticação e registro de usuários.
+service AuthService {
+  // SignUp cria uma nova conta de usuário e retorna um token JWT.
+  rpc SignUp(SignUpRequest) returns (SignUpResponse);
+  // SignIn autentica um usuário existente e retorna um token JWT.
+  rpc SignIn(SignInRequest) returns (SignInResponse);
+}
